@@ -1,0 +1,19 @@
+What Happens When Hidden Nodes Increase?
+Few Nodes (e.g., 1): With just 1 hidden node, the network is too basic, like drawing a straight line. It can’t handle the twisty "flower" shape and gets low accuracy, around 47%.
+
+Medium Nodes (e.g., 4-16): Adding 4 to 16 nodes helps a lot! The network can now draw curvy lines to match the flower’s petals, boosting accuracy to 90-94%.
+
+Lots of Nodes (e.g., 32-64): With 32 or 64 nodes, the accuracy doesn’t jump much more (maybe 95%), and it might start remembering the training data too well instead of learning the big picture. We’d need a test set to see if it’s overdoing it.
+
+
+
+
+
+
+Pattern of Accuracy
+Initial Rise: Accuracy jumps from ~47% (n_h=1) to ~90% (n_h=4) as the network learns the data’s structure.
+
+Gradual Improvement: From 4 to 16, accuracy increases slowly (e.g., 90% to 94%) as more nodes refine the decision boundary.
+
+Saturation: Beyond 16-32, gains are minimal (e.g., 94% to 95%), indicating the model has enough capacity for this dataset.
+
